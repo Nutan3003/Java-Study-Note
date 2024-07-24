@@ -5,6 +5,13 @@ Welcome to the Java Basics repository! This repository contains all the foundati
 ## Table of Contents
 
 1. [Introduction](#introduction)
+2. [Data Types](#data-types)
 
 ## Introduction
 This section provides you to How to take the input and how to print the output on console.
+
+
+## Data Types
+
+An overview of the different data types in Java, including primitives (int, char, boolean, etc.) and reference types (arrays, strings, etc.).
+
