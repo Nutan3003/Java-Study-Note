@@ -1,3 +1,4 @@
+
 # Java Basics
 
 Welcome to the Java Basics repository! This repository contains all the foundational concepts you need to get started with Java programming.
@@ -11,6 +12,8 @@ Welcome to the Java Basics repository! This repository contains all the foundati
 5. [String Class and Printing](#string-class-and-printing)
 6. [Conditional Statement](#conditional-statement)
 7. [Loops](#loops)
+8. [Arrays](#arrays)
+
 
 ## Introduction
 This section provides you to How to take the input and how to print the output on console.
@@ -67,4 +70,35 @@ For	loop	is	a	counter	controlled	loop.
 ➢ The	working	of	the	body	is	more	than	one	dimensional.	
 ➢ Nesting	of	any	two	types	of	loops	can	be	done.	
 ➢ Nested	for	loop	may	create	the	dimensional	loops.	
+<<<<<<< HEAD
 Example	program	for	nested	for	loop	
+=======
+Example	program	for	nested	for	loop
+
+## Array:
+### 1D Array
+➢ Array	is	a	collection	of	similar	data	elements.		
+➢ In	java	the	array	size	is	given	after	creating	the	new	object.	
+As			int	A[]=	new	int[x];	
+Where	A[]	is	the	reference	and	int[x]	is	the	object.	
+Where	object	is	created	in	the	heap.	
+And	the	reference	is	either	in	stack	or	heap.	
+➢ Location	of	characters	in	array	can	be	accessed	by	using	their	index.	
+➢ Every	array	in	java	has	length	as	its	property	which	can	be	accessed	
+by	using	“array-name.length”.	
+➢ For	loops	are	most	frequently	used	for	arrays.	
+➢ Using	for	loop	all	the	elements	in	the	arrays	can	be	accessed/	
+elements	in	array	can	be	transveresed	using	arrays.	
+➢ Java	has	introduced	for	each	loop	for	accessing	arrays	in	version	java	
+1.5	or	java	5.	
+
+### 2D Array:
+➢ Two-dimensional	array	are	suitable	for	matrices	and	tabular	form.	
+➢ Syntax	for	creating	two-dimensional	array	in	java	is		
+:	int	A[][]	=	new	int	[3][4].	
+➢ It	is	also	known	as	array	of	arrays	or	collection	of	arrays	
+➢ Object	is	created	In	heap	but	the	reference	may	or	may	not	be	created	
+in	heap.	
+➢ Array_name.length	gives	number	of	rows.	
+➢ Array_name[index].length	gives	the	number	of	columns.	
+
