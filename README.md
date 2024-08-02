@@ -12,7 +12,8 @@ Welcome to the Java Basics repository! This repository contains all the foundati
 6. [Conditional Statement](#conditional-statement)
 7. [Loops](#loops)
 8. [Arrays](#arrays)
-9. [Methods](#methods)
+9. [Methods](#methods)  
+10. [Principles of OPP](#principles_of_oop)
 
 
 ## Introduction
@@ -146,5 +147,78 @@ Example program for nested for loop.
 
 - `C:\Windows> dir v*.*`
 - The above is a command line in which `dir` is the command and `v*.*` is an argument.
+
+
+## Principles of OPP
+### Principles	of	Object-Oriented	programming	are	
+### 1.Abstraction.
+  - Abstraction	means	hiding	internal	details	and	showing	the	required	
+things
+  - For Example
+Consider a man driving a car, while driving he focus on using of steering, gear,
+accelerator etc.
+He does not require to know the inner mechanism of the car.	
+
+### 2.Encapsulation.	
+- Encapsulation	is	the	process	of	grouping	data	in	a	single	section.
+- For	Example		
+Complete	television	is	single	box	where	all	the	mechanism	are	hidden	inside	the	
+box	all	are	capsuled
+
+### 3.Inheritance.
+- Inheritance	means	designing	an	object	or	a	class	by	re-using	the	
+properties	of	the	existing	class	and	object.
+- Inheritance	is	same	as	specialization.	
+- For	Example		
+A	old	style	television	(idiot	box)	is	transformed	with	extra	features	into	slim	and	
+smart	television	where	it	re-used	the	properties	of	old	television.
+
+### 4.Polymorphism.
+- Polymorphism	is	a	concept	in	which	we	can	execute	a	single	
+operation	in	different	ways.
+- polymorphism	is	same	as	generalization.
+
+## Class VS Object
+- Object	is	deEined	in	terms	of	its	properties	and	behaviour.
+- Operation	of	behaviours	will	affect	the	properties.	
+- Anything	in	the	world	can	be	deEined	in	the	terms	of	properties	and	
+behaviour.	
+- For	a	single	class	wee	can	have	many	objects.	
+- Multiple	number	of	objects	can	be	created	by	one	single	class		
+
+## Data Hiding
+
+- Usually	data	is	hidden	and	the	operations	are	made	visible	and	
+operations	or	methods	are	performed	over	the	data	
+ 
+- For	example	
+Actual	operation	of	the	television	is	performed	in	the	circuitry	which	is	done	by	
+pressing	a	button.so	the	circuitry	is	data	and	operations	are	methods	where	the	
+data	is	hidden	inside	the	box.
+
+### Types of Proper:es
+- Read	and	writable	property.	
+- getLength()	method	will	allow	us	to	read	the	property	and	
+setLength()	method	will	allow	us	to	write	the	property	.	
+- Read	only	property.	
+- When	there	is	no	modiEication	to	the	property	then	read	only	
+property	is	used.		
+- Write	only	property.	
+- Only	set	method	is	used	for	writing	the	property	where	no	get	
+method	is	used.	
+
+### Constructors
+- 	A	method	is	required	for	Initialization	of	properties	at	the	time	of	
+construction	of	an	object,	this	method	is	known	as	constructor.	
+- Constructor	is	a	method	of	class	called	when	an	object	is	created.	
+- Every	class	will	have	a	default	constructor	provided	by	java	compiler.	
+- Constructor	will	not	have	any	return	type.		
+- There	are	two	types	of	constructors		
+  - 1.	parameterized	
+  - 2.	Non-parameterized.	
+- Non-parameterized	constructors	is	a	replacement	for	default	
+constructors.	
+- Constructors	can	be	overloaded.
+
 
 **Note:** This documentation is from the `Java-study-note` branch.
