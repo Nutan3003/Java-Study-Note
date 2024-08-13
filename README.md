@@ -19,6 +19,7 @@ Welcome to the Java Basics repository! This repository contains all the foundati
 13. [Interface](#interfaces)
 14. [Inner classes](#Inner_classes)
 15. [Static and final](#staticAndFinal)
+16. [Exception Handling](#exception_handling)
 
 
 ## Introduction
@@ -348,5 +349,89 @@ The `interface` branch focuses on interfaces in Java. Interfaces are abstract ty
 - Inner classes can be static or non-static.
 - Non-static inner classes can access outer class members directly.
 - Static inner classes (nested classes) do not have access to the instance variables of the outer class.
+
+
+# Exception Handling in Java
+
+## Types of Errors
+- **Exceptions** are Runtime Errors.
+- There are various types of errors:
+  - **Syntax Error**
+  - **Logical Error**
+  - **Runtime Error**
+
+### Syntax Error
+- Syntax and Logical errors are faced by programmers, while runtime errors are faced by users.
+- Syntax errors include spelling or grammatical mistakes, such as using an uninitialized variable, using an undefined variable, or missing a semicolon.
+- Syntax errors can be removed with the help of a compiler.
+
+### Logical Error
+- A logical error is a bug in the program that causes it to operate incorrectly, such as missing parentheses in a calculation.
+- Logical errors can be removed with the help of a debugger.
+
+### Runtime Error
+- Mishandling of a program causes runtime errors.
+- Causes of runtime errors include bad input or the unavailability of resources.
+- A major problem with runtime errors is that the program will crash.
+
+## Exception Handling
+- Exception handling is the process of responding to runtime errors.
+- The `try` statement allows you to define a block of code to be tested for errors while it is being executed.
+- The `catch` statement allows you to define a block of code to be executed if an error occurs in the `try` block.
+- The `try` and `catch` keywords come in pairs.
+- A `try` block can have multiple `catch` blocks.
+- `Try` and `catch` blocks can be nested.
+- When a `try-catch` block is present in another `try` block, it is called a nested `try-catch` block.
+
+## Exception Classes
+- **Object** is the base class for all Java classes.
+- **Exception** is the parent class for all exceptions.
+
+### Common Exceptions:
+- **ClassNotFoundException**: Raised when an object is used, but the class is not found.
+- **IOException**: Occurs when there is an issue accessing input/output, usually related to files. A common example is `FileNotFoundException`, which is thrown when a file is not found or is corrupted.
+- **InterruptedException**: Related to multithreading; this exception is thrown if a thread is interrupted or stops abnormally.
+- **NumberFormatException**: Thrown when a string that is expected to be a number is not properly formatted as such.
+- **RuntimeExceptions**: Includes exceptions like `ArithmeticException`, `IndexOutOfBoundException`, and `NullPointerException`.
+
+### Exception Classification:
+- **Checked exceptions** must be handled using `try` and `catch` blocks. The Java compiler enforces handling these exceptions.
+- **Unchecked exceptions** do not need to be explicitly handled. Only `RuntimeExceptions` fall under this category.
+
+### Methods of the Exception Class for Error Messages:
+- `string getMessage()`: Returns a string containing a message about the exception.
+- `string toString()`: Also returns a string with a message about the exception. While both methods serve a similar purpose, they may be used in different contexts.
+
+## Throw vs Throws
+
+- **throw**:
+  - The `throw` keyword is used to logically throw an exception.
+  - Only one exception can be thrown at a time using the `throw` keyword.
+  - It is used within the method.
+  - It is followed by an instance of an exception.
+
+- **throws**:
+  - The `throws` keyword is used for declaring that a method may throw an exception.
+  - `throws` is written in the method's signature.
+
+## Try with Resources
+
+- **Resources in a Program**:
+  - All external elements that a program interacts with are considered resources, including files, network connections, and more.
+  - The heap is also considered a resource for a program.
+  - A program should acquire the necessary resources when needed and release them when they are no longer required.
+  - In Java, objects are created in the heap memory using the `new` keyword.
+  - Java's garbage collector automatically deallocates objects in the heap memory when they are no longer in use.
+
+- **Finally Keyword**:
+  - The `finally` keyword is used in association with a `try/catch` block.
+  - The `finally` block is executed whether an exception occurs or not.
+  - Resources should be closed within the `finally` block to ensure they are released properly.
+
+- **Try-with-Resources Statement**:
+  - The try-with-resources statement is a `try` statement that declares one or more resources.
+  - It ensures that each resource is closed automatically at the end of the statement, eliminating the need for an explicit `finally` block to close resources.
+
+
 
 **Note:** This documentation is from the `Java-study-note` branch.
